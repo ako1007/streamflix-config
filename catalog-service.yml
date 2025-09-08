@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/catalog
+    username: catalog_user
+    password: catalog_pass
+
+  kafka:
+    bootstrap-servers: localhost:9092
