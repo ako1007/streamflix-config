@@ -2,12 +2,11 @@ server:
   port: 8081
 
 spring:
-  application:
-    name: auth-service
   datasource:
     url: jdbc:postgresql://localhost:5432/auth_db
     username: auth_user
     password: auth_pass
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,4 +17,5 @@ spring:
 
 jwt:
   secret: "43ea15d4add1bbabafc9d34a0310a6f8"
-  expiration: 3600000 
+  expiration: 3600000
+
